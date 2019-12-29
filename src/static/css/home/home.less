@@ -1,0 +1,76 @@
+*{
+  user-select: none;
+}
+  img { pointer-events: none; }
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  color: #3f3f3f;
+}
+html{
+  position: relative;
+  z-index: -5;
+}
+body{
+
+  position: relative;
+  z-index: -4;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 720px;
+  position: relative;
+  z-index: -3;
+}
+
+.homeBox {
+  width: 100%;
+  height: 100%;
+  background: url("../../../static/img/home/bg.png") left top/100% 100% no-repeat;
+position: relative;
+  z-index: -2;
+  .header {
+    width: 100%;
+    height: 7.8rem;
+    background: url("../../../static/img/home/logo.png") center -1rem no-repeat;
+    background-size: 175%;
+    animation: bounceInDown 1s;
+  }
+
+  .body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+z-index: 9;
+    img {
+      width: 4.12rem;
+    }
+    a:nth-of-type(odd){
+      animation: bounceInLeft 1s;
+    }
+    a:nth-of-type(even){
+      animation: bounceInRight 1s;
+    }
+    a:active{
+      transition: all .2s;
+      transform: scale(1.2);
+    }
+  }
+
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    z-index: -1;
+    img{
+      width: 100%;
+    }
+  }
+}

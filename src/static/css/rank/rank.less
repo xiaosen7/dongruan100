@@ -1,0 +1,148 @@
+.rankBox {
+  width: 100%;
+  height: 100%;
+  background: url("../../img/rank/bg.png") left top / 100% 100% no-repeat;
+  position: relative;
+animation: bounceIn 1s;
+  .header{
+    width: 100%;
+    height: 1.95rem;
+    position: absolute;
+    top:.63rem;
+    .toBack,.toShare{
+      width: 1.28rem;
+      height: .71rem;
+      position: absolute;
+      transition: all .2s;
+    }
+    .back,.share{
+      width: 100%;
+      height: 100%;
+    }
+    .toBack:active,.toShare:active{
+      transform: scale(1.2);
+    }
+    .toBack{
+      left: .59rem;
+    }
+    .toShare{
+      left: 5.4rem;
+    }
+    .title{
+      width: 4.42rem;
+      height: 1.02rem;
+      position: absolute;
+      left: 1.49rem;
+      top:.94rem;
+    }
+   &>span{
+      width: .8rem;
+      height: .80rem;
+      position: absolute;
+      line-height: .32rem;
+      text-align: center;
+      font-size: .4rem;
+      animation: heartBeat 1s 1.5s;
+    }
+    .total.t{
+      left: 3.9rem;
+      top:1rem;
+    }
+    .right.t{
+      left: 2.22rem;
+      top:1.6rem;
+    }
+    .rank.t{
+      left: 4.75rem;
+      top:1.6rem;
+
+    }
+    .right.s{
+      left: 4.2rem;
+      top: 1.0rem;
+    }
+    .rank.s{
+      width: 1.2rem;
+left: 2.1rem;
+      top:1.6rem;
+    }
+  }
+  .rankList {
+    animation: bounceInDown 1s;
+    width: 5.32rem;
+    height: 7.94rem;
+    position: absolute;
+    left: 1rem;
+    top: 2.58rem;
+    background: url("../../img/rank/content.png") left top / 100% 100% no-repeat;
+    .decoration {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      animation: swing 2s ease-out;
+    }
+.rankTitle{
+  width: 3.64rem;
+  height: .52rem;
+  left: 1rem;
+  top:1.29rem;
+  position: absolute;
+  animation: swing 2s .5s ease-out;
+
+}
+    ul{
+      width: 5.32rem;
+      height: 4.98rem;
+      position: absolute;
+      top:1.96rem;
+      left: 0;
+      .rankList-item{
+        height: .78rem;
+        width: 100%;
+        margin-top: .27rem;
+        position: relative;
+        opacity: 0;
+        background: url("../../img/rank/rankListItemBg.png") left top / 100% 100% no-repeat;
+        img{
+          width: .78rem;
+          height: .78rem;
+          position: absolute;
+          left: .27rem;
+          top:0;
+          border-radius: 50%;
+        }
+        span{
+          position: absolute;
+          width: 3.58rem;
+          height: .78rem;
+          left: 1.05rem;
+          top:0;
+          text-align: left;
+          line-height: .78rem;
+          text-indent: .2rem;
+          font-size: .36rem;
+        }
+      }
+      .rankList-item:nth-of-type(1){
+        margin-top: 0rem;
+      }
+      .rankList-item:nth-of-type(1){
+        animation: bounceInLeft 1s .2s forwards;
+      }
+      .rankList-item:nth-of-type(2){
+        animation: bounceInLeft 1s .4s forwards;
+      }
+      .rankList-item:nth-of-type(3){
+        animation: bounceInLeft 1s .6s forwards;
+      }
+      .rankList-item:nth-of-type(4){
+        animation: bounceInLeft 1s .8s forwards;
+      }
+      .rankList-item:nth-of-type(5){
+        animation: bounceInLeft 1s 1s forwards;
+      }
+    }
+  }
+}

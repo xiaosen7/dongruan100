@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0"/>
+  <meta name="description" content="成都东软学院，坐落于青城山，风景优美，气候宜人，休生养息">
+  <title>东软100问！！</title>
+</head>
+<body>
+<script>
+  ;(function () {
+    const html = document.documentElement;
+
+    function computedREM() {
+      if(screen.width===768){
+        html.style.width='560px';
+        html.style.fontSize='78px';
+        return;
+      }
+      const desW = 720,
+          winW = parseFloat(html.clientWidth);
+      html.style.fontSize = winW < desW ? winW / desW * 100 + 'px' : '100px';
+
+    }
+
+    computedREM();
+    window.addEventListener('resize', computedREM);
+  })()
+</script>
+<div id="root"></div>
+</body>
+</html>
